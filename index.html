@@ -12,8 +12,13 @@
     <header class="header">
       <div class="container-header">
         <nav class="navbar">
-          <a href="/">
-            <img src="./img/logo.svg" alt="logo" />
+          <a href="index.html">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="logo-img" cx="16" cy="24" r="16" />
+              <circle class="logo-img stroke" cx="32" cy="24" r="15" fill="white" stroke-width="2"/>
+              <path class="logo-img" d="M38.3 31L33.38 17H29.96L25.06 31H28.04L28.88 28.48H34.46L35.3 31H38.3ZM31.68 20.18L33.6 25.9H29.76L31.68 20.18Z" />
+              </svg>
+              
           </a>
           <ul class="nav" id="nav">
             <li class="hidden-nav-item"><a href="#">Contact</a></li>
@@ -35,6 +40,7 @@
           <button class="hero-btn">See Our Project</button>
         </div>
         <img
+          loading="lazy"
           class="hero-img"
           src="./img/illustration.svg"
           alt="New Automation Tool for Your Home"
@@ -43,10 +49,32 @@
     </section>
     <section class="about-us">
       <div class="container">
+        <h3 class="about-title">
+          What we do to help our client grow in digital era,
+        </h3>
         <div class="about-main">
-          <h3 class="about-title">
-            What we do to help our client grow in digital era,
-          </h3>
+          <div class="about-section">
+            <img src="./img/" alt="" />
+            <h4 class="about-section-title">
+              Make Your business To Be Better Famous In Internet
+            </h4>
+            <p class="about-section-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="learn-more" href="#">Learn More <i class="fas fa-arrow"></i></a>
+          </div>
+          <div class="about-section">
+            <img src="./img/" alt="" />
+            <h4 class="about-section-title">
+              Make Your business To Be Better Famous In Internet
+            </h4>
+            <p class="about-section-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="learn-more" href="#">Learn More <i class="fas fa-arrow"></i></a>
+          </div>
           <div class="about-section">
             <img src="./img/" alt="" />
             <h4 class="about-section-title">
@@ -107,7 +135,7 @@
               enim ad minim veniam.
             </p>
           </div>
-          <img src="./img/main.png" alt="" />
+          
           <div class="footer-first-sponsors">
             <div class="sponsor"><a href="">logo client 1</a></div>
             <div class="sponsor"><a href="">logo client 2</a></div>

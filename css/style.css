@@ -8,16 +8,11 @@
 }
 @font-face {
   font-family: "Galien";
-  src: url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.eot?#iefix")
-      format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff2")
-      format("woff2"),
-      url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff")
-      format("woff"),
-      url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.ttf")
-      format("truetype"),
-      url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.svg#Galien")
-      format("svg");
+  src: url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.svg#Galien") format("svg");
 }
 html,
 body,
@@ -173,10 +168,10 @@ i {
   text-decoration: none;
   color: inherit;
 }
-p{
-  opacity: .6;
+p {
+  opacity: 0.6;
 }
-h3{
+h3 {
   font-size: 36px;
   font-weight: normal;
 }
@@ -189,12 +184,8 @@ h3{
   --blue-4: hsl(calc(var(--hue) - 6), 56%, 58%);
   --blue-5: hsl(calc(var(--hue) - 6), 63%, 75%);
   --color-5a02: hsl(calc(var(--hue) - 6), 63%, 75%, 0.2);
-  --blue-gradient: linear-gradient(
-    181deg,
-    rgba(255, 255, 255, 0) 6.19%,
-    rgba(100, 181, 246, 0.6) 103.09%
-  );
-  --blue-gradient-2: linear-gradient(183deg, #98d0fc -3.62%, #3481d7 88.96%);
+  --blue-gradient: linear-gradient(181deg, rgba(255, 255, 255, 0) 6.19%, #64b5f699 103.09%);
+  --blue-gradient-2: linear-gradient(183deg, #98d0fc -3.62%, hsl(212, 67%, 52%) 88.96%);
   --text-color: #fff;
 }
 
@@ -225,6 +216,12 @@ h3{
   width: 48px;
   height: 48px;
 }
+.logo-img:not(.stroke){
+  fill: var(--blue-1);
+}
+.logo-img.stroke{
+  stroke: var(--blue-1);
+}
 .nav {
   display: flex;
   align-items: center;
@@ -243,11 +240,7 @@ h3{
 /* hero start */
 .hero {
   padding-bottom: 240px;
-  background: linear-gradient(
-    0deg,
-    var(--color-5a02) 8.84%,
-    transparent 31.12%
-  );
+  background: linear-gradient(0deg, var(--color-5a02) 8.84%, transparent 31.12%);
   margin-bottom: 200px;
 }
 .hero > .container {
@@ -262,7 +255,7 @@ h3{
   line-height: 74px;
   color: var(--blue-1);
   margin-bottom: 30px;
-  font-family: "Galien";
+  font-family: "Galien", serif;
 }
 .hero-text {
   line-height: 26px;
@@ -276,14 +269,14 @@ h3{
   background: var(--blue-4);
   font-size: 16px;
   line-height: 26px;
-  box-shadow: 5px 10px 20px hsla(212, 53%, 44%, .2);
+  box-shadow: 5px 10px 20px hsla(212, 53%, 44%, 0.2);
   border-radius: 10px;
   color: var(--text-color);
+  transition: 0.3s;
 }
 .hero-btn:hover {
   opacity: 0.85;
-  position: relative;
-  top: -5px;
+  transform: translateY(-5px);
 }
 .hero-img {
   position: absolute;
@@ -293,32 +286,32 @@ h3{
 }
 /* header end */
 /* project start */
-.project{
+.project {
   margin: 200px 0;
 }
-.project-main{
+.project-main {
   display: flex;
   flex-direction: column;
 }
-.project-info{
-  display:flex;
+.project-info {
+  display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
 }
-.project-title{
+.project-title {
   width: 230px;
   color: var(--blue-1);
   font-weight: 800;
 }
-.project-text{
+.project-text {
   width: 540px;
   line-height: 26px;
   letter-spacing: 0.05em;
 }
-.smart-home{
+.smart-home {
   height: 420px;
   border-radius: 10px;
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
   margin-bottom: 90px;
   padding: 48px 60px 0 0;
@@ -329,31 +322,31 @@ h3{
   flex-direction: column;
   align-content: flex-end;
 }
-.smart-home-deco{
+.smart-home-deco {
   position: absolute;
   top: 75px;
 }
-.smart-home-title{
+.smart-home-title {
   font-size: 28px;
   margin-bottom: 5px;
 }
-.smart-home-info{
+.smart-home-info {
   line-height: 46px;
-  opacity: .8;
+  opacity: 0.8;
 }
 .no-webp .smart-home {
-  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
     url("../img/smart-home.jpg") no-repeat 50% / cover;
 }
 .webp .smart-home {
-  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
     url("../img/smart-home.webp") no-repeat 50% / cover;
 }
-.apps{
+.apps {
   display: flex;
   justify-content: space-between;
 }
-.app{
+.app {
   width: 420px;
   height: 420px;
   border-radius: 10px;
@@ -367,7 +360,7 @@ h3{
     url("../img/Sparklite-app.jpg") no-repeat 50% / cover;
 }
 .webp .app-left {
-  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
     url("../img/Sparklite-app.webp") no-repeat 50% / cover;
 }
 .no-webp .app-right {
@@ -378,16 +371,16 @@ h3{
   background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
     url("../img/car-rapetition-app.webp") no-repeat 50% / cover;
 }
-.app-title{
+.app-title {
   font-size: 28px;
   margin-bottom: 5px;
 }
-.app-place{
-  opacity: .8;
+.app-place {
+  opacity: 0.8;
 }
 /* project end */
 /* about-us start */
-.about-section{
+.about-section {
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -396,32 +389,42 @@ h3{
   line-height: 30px;
   box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
 }
-.about-section-title{
-font-size: 20px;
-margin:55px 0 16px 0;
+.about-title{
+  width: 360px;
+  position: absolute;
 }
-.about-section-info{
+.about-section-title {
+  font-size: 20px;
+  margin: 55px 0 16px 0;
+}
+.about-section-info {
   margin-bottom: 32px;
 }
-.learn-more{
+.about-main{
+  width: calc(100% - 80px);
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-section{
+  height: 525px;
+}
+.about-section:not(:first-child){
+  margin-top: -200px;
+}
+.about-main>:nth-child(odd){
+  align-self: flex-end;
+}
+.about-main>:nth-child(even){
+  align-self: flex-start;
+}
+
+.learn-more {
   color: var(--blue-4);
   font-size: 14px;
   font-weight: 800;
 }
 /* about-us end */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer start */
 .footer-first {
@@ -451,15 +454,25 @@ margin:55px 0 16px 0;
   margin-left: 100px;
 }
 .footer-first-sponsors {
-  border: solid 1px red;
   display: flex;
   flex-wrap: wrap;
-  max-height: 260px;
 }
-.sponsor{
-  padding: 41px 45.9px;
+.sponsor {
+  width: 25%;
+  text-align: center;
+  padding: 40px 0;
   font-size: 20px;
   text-transform: uppercase;
-  border-bottom: solid 1px #fff;
+  border-left: solid 1px #fff;
+}
+.sponsor:nth-child(n + 5) {
+  border-top: solid 1px #fff;
+}
+.sponsor:nth-child(4n + 1) {
+  border-left: 0;
+}
+.sponsor:last-child {
+  background-color: var(--color-5a02);
+  text-transform: initial;
 }
 /* footer end */
