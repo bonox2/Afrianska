@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="js/modernizr-webp.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afrianska</title>
@@ -12,7 +13,7 @@
       <div class="container-header">
         <nav class="navbar">
           <a href="/">
-            <img src="./img/logo.svg" alt="logo">
+            <img src="./img/logo.svg" alt="logo" />
           </a>
           <ul class="nav" id="nav">
             <li class="hidden-nav-item"><a href="#">Contact</a></li>
@@ -27,12 +28,72 @@
         <div class="hero-info">
           <h1 class="hero-title">New Automation Tool for Your Home</h1>
           <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris
-            tellus at. Posuere sollicitudin odio tellus elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+            tristique vulputate ultrices ut mauris tellus at. Posuere
+            sollicitudin odio tellus elit.
           </p>
           <button class="hero-btn">See Our Project</button>
         </div>
-        <img class="hero-img" src="./img/illustration.svg" alt="New Automation Tool for Your Home" />
+        <img
+          class="hero-img"
+          src="./img/illustration.svg"
+          alt="New Automation Tool for Your Home"
+        />
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-main">
+          <h3 class="about-title">
+            What we do to help our client grow in digital era,
+          </h3>
+          <div class="about-section">
+            <img src="./img/" alt="" />
+            <h4 class="about-section-title">
+              Make Your business To Be Better Famous In Internet
+            </h4>
+            <p class="about-section-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="learn-more" href="#">Learn More <i class="fas fa-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="container">
+        <div class="project-main">
+          <div class="project-info">
+            <h3 class="project-title">Our Finished Project</h3>
+            <p class="project-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="our-projects">
+            <div class="smart-home">
+              <img
+                class="smart-home-deco"
+                src="./img/smart-home-deco.svg"
+                alt=""
+              />
+              <h4 class="smart-home-title">Smart Home Installation</h4>
+              <div class="smart-home-info">In Muarakana Housing Estate</div>
+            </div>
+            <div class="apps">
+              <div class="app app-left">
+                <h4 class="app-title">Sparklite App</h4>
+                <div class="app-place">Marketplace</div>
+              </div>
+              <div class="app app-right">
+                <h4 class="app-title">Car-Rapetition App</h4>
+                <div class="app-place">Board</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <div class="footer-first">
@@ -40,30 +101,34 @@
         <div class="footer-first-main">
           <div class="footer-first-info">
             <h3 class="footer-first-title">Our Beloved Client</h3>
-            <p class="footer-first-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="footer-first-about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
           </div>
+          <img src="./img/main.png" alt="" />
           <div class="footer-first-sponsors">
-            <a href="#">logo client 1</a>
-            <a href="#">logo client 2</a>
-            <a href="#">logo client 3</a>
-            <a href="#">logo client 4</a>
-            <a href="#">logo client 5</a>
-            <a href="#">logo client 6</a>
-            <a href="#">logo client 7</a>
+            <div class="sponsor"><a href="">logo client 1</a></div>
+            <div class="sponsor"><a href="">logo client 2</a></div>
+            <div class="sponsor"><a href="">logo client 3</a></div>
+            <div class="sponsor"><a href="">logo client 4</a></div>
+            <div class="sponsor"><a href="">logo client 5</a></div>
+            <div class="sponsor"><a href="">logo client 6</a></div>
+            <div class="sponsor"><a href="">logo client 7</a></div>
+            <div class="sponsor"><a href="">More Client</a></div>
           </div>
         </div>
       </div>
-      <footer>
+      <footer class="footer">
         <div class="container"></div>
       </footer>
     </div>
 
-
-
     <script>
       navBtn.addEventListener("click", (ev) => {
-        ev.target.classList.toggle('fa-bars')
-        ev.target.classList.toggle('fa-times')
+        ev.target.classList.toggle("fa-bars");
+        ev.target.classList.toggle("fa-times");
         nav.classList.toggle("visible");
       });
     </script>

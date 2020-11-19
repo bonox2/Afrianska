@@ -3,6 +3,10 @@
   src: url("../fonts/Gilroy-Light.otf");
 }
 @font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+@font-face {
   font-family: "Galien";
   src: url("//db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.eot?#iefix")
       format("embedded-opentype"),
@@ -143,7 +147,7 @@ table {
 }
 
 body {
-  font-family: "Gilroy-ExtraBold", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 16px;
 }
 button {
@@ -169,7 +173,13 @@ i {
   text-decoration: none;
   color: inherit;
 }
-
+p{
+  opacity: .6;
+}
+h3{
+  font-size: 36px;
+  font-weight: normal;
+}
 /* base start */
 :root {
   --hue: 214;
@@ -185,10 +195,7 @@ i {
     rgba(100, 181, 246, 0.6) 103.09%
   );
   --blue-gradient-2: linear-gradient(183deg, #98d0fc -3.62%, #3481d7 88.96%);
-  --yellow-gradient: linear-gradient(238deg, #fff8e1 0.54%, #ffcc80 88.49%);
-  --red-gradient: linear-gradient(180deg, #eb5757 0%, #872727 100%);
-  --purple-gradient: linear-gradient(180deg, #af6ced 0%, #5e199d 100%);
-  --white: #fff;
+  --text-color: #fff;
 }
 
 .container {
@@ -241,6 +248,7 @@ i {
     var(--color-5a02) 8.84%,
     transparent 31.12%
   );
+  margin-bottom: 200px;
 }
 .hero > .container {
   position: relative;
@@ -260,6 +268,7 @@ i {
   line-height: 26px;
   color: var(--blue-1);
   margin-bottom: 70px;
+  width: 420px;
 }
 .hero-btn {
   border: none;
@@ -269,7 +278,7 @@ i {
   line-height: 26px;
   box-shadow: 5px 10px 20px hsla(212, 53%, 44%, .2);
   border-radius: 10px;
-  color: var(--white);
+  color: var(--text-color);
 }
 .hero-btn:hover {
   opacity: 0.85;
@@ -283,9 +292,140 @@ i {
   z-index: -1;
 }
 /* header end */
+/* project start */
+.project{
+  margin: 200px 0;
+}
+.project-main{
+  display: flex;
+  flex-direction: column;
+}
+.project-info{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.project-title{
+  width: 230px;
+  color: var(--blue-1);
+  font-weight: 800;
+}
+.project-text{
+  width: 540px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+.smart-home{
+  height: 420px;
+  border-radius: 10px;
+  overflow:hidden;
+  position: relative;
+  margin-bottom: 90px;
+  padding: 48px 60px 0 0;
+  color: var(--text-color);
+  line-height: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.smart-home-deco{
+  position: absolute;
+  top: 75px;
+}
+.smart-home-title{
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.smart-home-info{
+  line-height: 46px;
+  opacity: .8;
+}
+.no-webp .smart-home {
+  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+    url("../img/smart-home.jpg") no-repeat 50% / cover;
+}
+.webp .smart-home {
+  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+    url("../img/smart-home.webp") no-repeat 50% / cover;
+}
+.apps{
+  display: flex;
+  justify-content: space-between;
+}
+.app{
+  width: 420px;
+  height: 420px;
+  border-radius: 10px;
+  text-align: flex-start;
+  padding: 24px 0 0 32px;
+  color: var(--text-color);
+  line-height: 46px;
+}
+.no-webp .app-left {
+  background: linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+    url("../img/Sparklite-app.jpg") no-repeat 50% / cover;
+}
+.webp .app-left {
+  background: linear-gradient(90deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+    url("../img/Sparklite-app.webp") no-repeat 50% / cover;
+}
+.no-webp .app-right {
+  background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
+    url("../img/car-rapetition-app.jpg") no-repeat 50% / cover;
+}
+.webp .app-right {
+  background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
+    url("../img/car-rapetition-app.webp") no-repeat 50% / cover;
+}
+.app-title{
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.app-place{
+  opacity: .8;
+}
+/* project end */
+/* about-us start */
+.about-section{
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
+}
+.about-section-title{
+font-size: 20px;
+margin:55px 0 16px 0;
+}
+.about-section-info{
+  margin-bottom: 32px;
+}
+.learn-more{
+  color: var(--blue-4);
+  font-size: 14px;
+  font-weight: 800;
+}
+/* about-us end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer start */
 .footer-first {
-  padding: 100px 100px 0 0;
+  padding-top: 100px;
   background: var(--blue-4);
   border-radius: 200px 0 0 0;
   color: #fff;
@@ -311,17 +451,15 @@ i {
   margin-left: 100px;
 }
 .footer-first-sponsors {
-  width: 940px;
-  height: 250px;
-  border: solid 1px var(--blue-4);
+  border: solid 1px red;
   display: flex;
   flex-wrap: wrap;
+  max-height: 260px;
 }
-.footer-first-sponsors > a {
-  padding: 41px 44px;
+.sponsor{
+  padding: 41px 45.9px;
   font-size: 20px;
   text-transform: uppercase;
-  border: 1px solid #ffffff;
-  width: 235px;
+  border-bottom: solid 1px #fff;
 }
 /* footer end */
