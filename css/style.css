@@ -382,7 +382,7 @@ h3 {
 /* about-us start */
 .about-main>:first-child>:first-child{
   position: relative;
-  top:-30px;
+  margin-top: -80px;
 }
 .about-section {
   width: 380px;
@@ -414,9 +414,6 @@ h3 {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-}
-.about-section{
-  height: 525px;
 }
 .about-section:not(:first-child){
   margin-top: -200px;
@@ -493,4 +490,42 @@ text-decoration: underline;
   background-color: var(--color-5a02);
   text-transform: initial;
 }
+.footer{
+  background:var(--color-1);
+  padding-right: 100px;
+}
+.footer-info{
+  border-bottom: 1px solid #fff;
+}
 /* footer end */
+@media (max-width:991.98px){
+  .container{
+    max-width: 740px;
+  }
+  .hero{
+    padding-bottom: 400px;
+  }
+  .hero-img{
+    right: -10px;
+    top: 230px;
+  }
+  .footer-first-title{
+    margin-left: 30px;
+  }
+  .about-main{ width: calc(100% - -50px)}
+}
+@media (max-width:767.98px){
+  .container{
+    max-width: 545px;
+  }
+  .hero-img{
+    right: -80px;
+    top: 280px;
+  }
+  .about-main{ width: calc(100% - -80px)}
+}
+@media (max-width:575.98px){
+}
+@media (max-width:320px){
+
+}
