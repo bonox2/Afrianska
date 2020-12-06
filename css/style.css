@@ -183,9 +183,12 @@ h3 {
   --color-3: hsl(calc(var(--hue) - 2), 53%, 44%);
   --color-4: hsl(calc(var(--hue) - 6), 56%, 58%);
   --color-5: hsl(calc(var(--hue) - 6), 63%, 75%);
+  --color-1a02: hsl(var(--hue), 54%, 26%);
+  --color-1a04: hsla(var(--hue), 54%, 26%, 0.4);
   --color-5a02: hsl(calc(var(--hue) - 6), 63%, 75%, 0.2);
-  --color-gradient: linear-gradient(181deg, rgba(255, 255, 255, 0) 6.19%, #64b5f699 103.09%);
-  --color-gradient-2: linear-gradient(183deg, #98d0fc -3.62%, hsl(212, 67%, 52%) 88.96%);
+  --color-6a02: hsl(calc(var(--hue) - 10), 83%, 38%, 0.2);
+  --gradient-1:linear-gradient(90deg, var(--color-1) 3.62%,var(--color-1a04) 97.78%);
+  --gradient-2:;
   --text-color: #fff;
 }
 
@@ -210,7 +213,9 @@ h3 {
   justify-content: space-between;
 }
 .navbar > ul li {
-  color: var(--color-5);
+  color: var(--color-2);
+  font-size: 28px;
+  font-weight: 800;
 }
 .logo {
   width: 48px;
@@ -231,9 +236,12 @@ h3 {
 }
 .hidden-nav-item {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .nav.visible > .hidden-nav-item {
+  opacity: .6;
+}
+.nav.visible > .hidden-nav-item:hover {
   opacity: 1;
 }
 /* header end */
@@ -335,11 +343,11 @@ h3 {
   opacity: 0.8;
 }
 .no-webp .smart-home {
-  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
-    url("../img/smart-home.jpg") no-repeat 50% / cover;
+  background: url('./img/smart-home-deco.svg'),var(--gradient-1),
+    url("../img/smart-home.jpg"), no-repeat 50% / cover;
 }
 .webp .smart-home {
-  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+  background: var(--gradient-1),
     url("../img/smart-home.webp") no-repeat 50% / cover;
 }
 .apps {
@@ -350,25 +358,24 @@ h3 {
   width: 420px;
   height: 420px;
   border-radius: 10px;
-  text-align: flex-start;
   padding: 24px 0 0 32px;
   color: var(--text-color);
   line-height: 46px;
 }
 .no-webp .app-left {
-  background: linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+  background: var(--gradient-1),
     url("../img/Sparklite-app.jpg") no-repeat 50% / cover;
 }
 .webp .app-left {
-  background: linear-gradient(90deg, #1f3f68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+  background: var(--gradient-1),
     url("../img/Sparklite-app.webp") no-repeat 50% / cover;
 }
 .no-webp .app-right {
-  background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
+  background: var(--gradient-1),
     url("../img/car-rapetition-app.jpg") no-repeat 50% / cover;
 }
 .webp .app-right {
-  background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
+  background: var(--gradient-1),
     url("../img/car-rapetition-app.webp") no-repeat 50% / cover;
 }
 .app-title {
@@ -391,7 +398,7 @@ h3 {
   padding: 50px;
   letter-spacing: 0.05em;
   line-height: 30px;
-  box-shadow: 5px 20px 50px  rgba(16, 112, 177, 0.2);
+  box-shadow: 5px 20px 50px  var(--color-6a02);
   border-radius: 10px;
 }
 .about-title{
@@ -400,7 +407,7 @@ h3 {
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  color: var();
+  color: var(--color-1);
 }
 .about-section-title {
   font-size: 20px;
@@ -491,13 +498,51 @@ text-decoration: underline;
   text-transform: initial;
 }
 .footer{
-  background:var(--color-1);
-  padding-right: 100px;
+  background:var(--color-2);
+  margin: 0 100px 0 0;
+  padding: 100px;
+  border-radius: 0  200px 0 0;
 }
-.footer-info{
+.footer-main{
   border-bottom: 1px solid #fff;
 }
+.footer-main>.container{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info{
+  padding-bottom: 100px;
+}
+.footer-title{
+ width: 320px;
+ margin-bottom: 30px ;
+}
+.footer-txt{
+  color: rgba(255,255,255, .6);
+  width: 460px;
+}
+.footer-btns{
+  padding-top: 65px;
+}
+.footer-talk-btn{
+  background-color: var(--color-4);
+  padding: 15px 75px;
+  border-radius: 10px;
+  transition: .2s;
+}
+.footer-talk-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-5px);
+}
 /* footer end */
+
+
+
+
+
+
+
+
 @media (max-width:991.98px){
   .container{
     max-width: 740px;
